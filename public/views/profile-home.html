@@ -1,0 +1,30 @@
+<h4>Profile</h4>
+
+
+<h3 style="color: grey;">Username: {{ profile.username }}</h3>
+<h6>Email: {{ profile.email }}</h6>
+<h6>Followers: {{ profile.followers }}</h6>
+<h6>Following: {{ profile.following }}</h6>
+
+<!-- <div style="margin-top: 20px; margin-bottom: 20px; width: 250px;" class="row">
+	<div class="col-md-10">
+		<input type="text" id="statusBox" ng-model="post" placeholder="Whats is in your mind.." class="form-control">
+	</div>
+	<div class="col-md-2">
+		<button class="btn btn-success" ng-click="update()">Post</button>
+	</div>
+</div> -->
+<div class="post">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<input type="text" id="statusBox" ng-model="post" placeholder="Whats is in your mind.." class="inpx">
+			</div>
+			<div class="col-md-4">
+				<button class="btn1 pull-left" ng-click="update()">Post</button>
+			</div>
+		</div>
+	</div>
+</div>	
+
+<button class="btn btn-danger" ng-click="logout()">Logout</button>

@@ -1,0 +1,18 @@
+<form name="user.form" class="form-signin" ng-submit="addUser()">
+
+<h3 class="form-signin-heading">Sign up</h3>
+<p class="text-danger">{{ login_error }}</p>
+  <label for="inputEmail" class="sr-only">Email address</label>
+  <input type="email" id="inputEmail" ng-model="userData.email" class="form-control" placeholder="Email address" required autofocus><br>
+
+  <label for="inputPassword" class="sr-only">Password</label>
+  <input type="password" id="inputPassword" ng-model="userData.password" class="form-control" placeholder="Password" required>
+
+  <label for="inputUsername" class="sr-only">Username</label>
+  <input type="text" id="inputUsername" ng-model="userData.username" class="form-control" placeholder="Username" required><br>
+
+<button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+
+<div class="signup-link">Already have account ? <span ui-sref="login" class="text-info">Login now</span></div>
+
+</form>

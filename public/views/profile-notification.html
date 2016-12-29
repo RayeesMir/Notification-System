@@ -1,0 +1,15 @@
+<h4>Posts/Notification</h4>
+<div class="notify-wrap">
+	<div ng-repeat="message in messages" class="notifications">
+		<p class="notify-message">
+			<span class="gyphicon glyphicon-envelope"></span>
+			<span data-ng-bind="message.post"></span></p>
+		<p class="notify-time">
+			<span class="glyphicon glyphicon-user"></span> <span data-ng-bind="message.name"></span>
+			<span class="pull-right">
+				<span class="glyphicon glyphicon-time"></span>
+				<span data-ng-bind="message.createdAt | date:'MMM dd, yyyy hh:mm a'"></span>
+			</span>
+		</p>	
+	</div>
+</div>

@@ -1,0 +1,24 @@
+{
+  "name": "notificationSystem",
+  "description": "",
+  "main": "config.js",
+  "authors": [
+    "mir <mirrayees859@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.5",
+    "angular-ui-router": "0.2.18",
+    "bootstrap": "3.3.6",
+    "angular-cookies": "1.5.5"
+  }
+}

@@ -1,0 +1,24 @@
+<h4>Friends</h4>
+
+<div ng-repeat="friend in people">
+
+
+    <div ng-hide="friend.username === '{{ profile.username }}'" class="row"
+         style="padding: 10px; border: 1px solid #EAE3E3;">
+        <div class="col-md-8">
+            <h4 style="color: grey; display: inline-block;">{{ friend.username }}
+                <div style="color: #3498db; font-size: 10px; margin: 0; padding: 0;" ng-hide="!friend.isFollower">
+                    Follows You
+                </div>
+            </h4>
+        </div>
+        <div class="col-md-4">
+            <button ng-hide="friend.isFollowing" class="btn btn-primary"
+                    ng-click="subscribe(friend.username, friend._id)">Follow
+            </button>
+            <button ng-hide="!friend.isFollowing" class="btn btn-success"
+                    ng-click="unSubscribe(friend.username, friend._id)">Following
+            </button>
+        </div>
+    </div>
+</div>

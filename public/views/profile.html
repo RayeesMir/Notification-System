@@ -1,0 +1,26 @@
+<!-- <div class="container">
+  <h1>Dashboard</h1>
+  <div class="row">
+    <div class="col-md-4" ui-view="home"></div>
+    <div class="col-md-4" ui-view="notifications"></div>
+    <div class="col-md-4" ui-view="friends"></div>
+  </div>
+</div> -->
+
+<!-- header -->
+<header>
+	<div class="container">
+		<div class="title pull-left">Dashboard</div>
+		<button class="pull-right btn-gs" ng-click="logout()"><span class="glyphicon glyphicon-log-out"></span> Logout</button>
+	</div>
+</header>
+
+<!-- main content -->
+
+<div class="container main">
+  <div class="row">
+    <div class="col-md-4" ui-view="home"></div>
+    <div class="col-md-4" ui-view="friends"></div>
+    <div class="col-md-4" ui-view="notifications"></div>
+  </div>
+</div>
