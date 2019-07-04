@@ -5,7 +5,9 @@
   "main": "config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +22,8 @@
     "mongoose": "^4.7.4",
     "nedb": "^1.8.0",
     "socket.io": "^1.7.2",
-    "socketio-jwt": "^4.5.0"
-  }
+    "socketio-jwt": "^4.5.0",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
