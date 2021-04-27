@@ -19,7 +19,7 @@
     "lodash": "^4.17.2",
     "mongoose": "^4.7.4",
     "nedb": "^1.8.0",
-    "socket.io": "^1.7.2",
+    "socket.io": "^3.0.0",
     "socketio-jwt": "^4.5.0"
   }
 }
